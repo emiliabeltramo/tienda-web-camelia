@@ -1,7 +1,10 @@
 
 header {
         color: gray;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-family: 'Playwrite GB S','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal; 
         text-align: center;
         background-color: antiquewhite;
 

@@ -32,5 +32,5 @@ p {
 }
 
 .fondoinfo {
-        background: linear-gradient (to bottom right, pink, yellow);
+        background-color: linear-gradient(to bottom right, pink, yellow);
 }

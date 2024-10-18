@@ -33,4 +33,6 @@ p {
 
 .fondoinfo {
         background-color: linear-gradient(to bottom right, pink, yellow);
+        background-position: center;
+        background-size: cover;
 }

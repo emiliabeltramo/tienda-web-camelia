@@ -5,6 +5,11 @@ header {
     margin: 20px;
     padding: 15px;
     justify-content: center;
+    color: gray;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal; 
+    text-align: center;
 }
 
 h1 {
@@ -114,5 +119,4 @@ p {
     border: dashed 2px;
     justify-self: center;
     margin: 1em;
-    
 }

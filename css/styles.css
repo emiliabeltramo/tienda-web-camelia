@@ -1,23 +1,118 @@
-
 header {
-        color: gray;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        text-align: center;
-        background-color: antiquewhite;
-
+    display: flex;
+    font-family: 'Playwrite GB S','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: antiquewhite;
+    margin: 20px;
+    padding: 15px;
+    justify-content: center;
 }
 
+h1 {
+    color: gray;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: 'Alegreya Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-inline-start: 1em;
+}
+
+
+h3 {
+    text-align: center;
+}
+
+
 footer {
-        font-family: Arial, Helvetica, sans-serif;
-        text-align: center;
-        background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    text-align: center;
+    background-color: antiquewhite;
+    margin: 20px;
+    padding: 10px;
 }
 
 ul, ol {
-        list-style: none;
+    list-style: none;
+}
+
+nav {
+    font-family: 'Alegreya Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+    font-weight: 400;
+    color: grey;
+}
+
+.menu {
+    padding-inline-start: 40px;
 }
 
 a {
-        text-decoration: none;
-        color: black;
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    font-family: 'Alegreya Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.fondoinfo {
+    display: flex;
+    justify-content: space-around;
+    background: -webkit-linear-gradient(orange, pink);
+    background: -moz-linear-gradient(orange, pink);
+    background: -o-linear-gradient(orange, pink);
+    background: linear-gradient(orange, pink);
+    background-position: center;
+    background-size: auto;
+    margin: 20px;
+    padding: 15px;
+    font-family: 'Alegreya Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: normal;
+}
+
+.videoinfo {
+    background-color: beige; 
+    margin: 20px;
+    padding: 15px;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.producto {
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 200px;
+    box-sizing: border-box;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    @media screen {
+        max-width: 321px;
+    }
+}
+
+.reseñas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin: 20px;
+    padding: 15px;
+}
+
+.reseña {
+    padding: 1em;
+    border: dashed 2px;
+    justify-self: center;
+    margin: 1em;
+    
 }

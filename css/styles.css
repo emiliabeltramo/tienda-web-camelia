@@ -53,6 +53,9 @@ nav {
     font-size: medium;
     font-weight: 400;
     color: grey;
+    margin: 20px;
+    padding: 15px;
+    padding-top: 0;
 }
 
 .menu {
@@ -69,6 +72,18 @@ p {
     font-weight: 400;
     font-style: normal;
     margin-top: 0;
+}
+
+.contenedorbanner {
+    display: flex;
+    justify-content: space-around;
+    background-position: center;
+    background-size: auto;
+    margin: 20px;
+    padding: 15px;
+    font-family: 'Alegreya Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: normal;
+    border-top: groove 1px;
 }
 
 .fondoinfo {
@@ -90,13 +105,21 @@ p {
     display: flex;
     align-items: center;
     flex-direction: column;
+    text-align: center;
 }
 
 
 .videoinfo {
-    background-color: beige; 
+    background: -webkit-linear-gradient(orange, pink);
+    background: -moz-linear-gradient(orange, pink);
+    background: -o-linear-gradient(orange, pink);
+    background: linear-gradient(orange, pink);
     margin: 20px;
     padding: 15px;
+}
+
+.titulovideo {
+    font-family: 'Alegreya Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
 }
 
 .video {

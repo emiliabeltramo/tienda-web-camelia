@@ -3,8 +3,6 @@ header {
     display: flex;
     font-family: 'Playwrite GB S','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: antiquewhite;
-    margin: 20px;
-    padding: 15px;
     justify-content: center;
     align-items: center;
 }
@@ -38,7 +36,7 @@ footer {
     font-size: small;
     text-align: center;
     background-color: antiquewhite;
-    margin: 20px;
+    margin-top: 10px;
     padding: 10px;
 }
 
@@ -95,7 +93,6 @@ p {
     background: linear-gradient(orange, pink);
     background-position: center;
     background-size: auto;
-    margin: 20px;
     padding: 15px;
     font-family: 'Alegreya Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-style: normal;
@@ -114,8 +111,6 @@ p {
     background: -moz-linear-gradient(orange, pink);
     background: -o-linear-gradient(orange, pink);
     background: linear-gradient(orange, pink);
-    margin: 20px;
-    padding: 15px;
 }
 
 .titulovideo {
@@ -155,9 +150,6 @@ p {
     display: flex;
     flex-direction: column;
     font-weight: bold;
-    @media screen {
-        max-width: 321px;
-    }
 }
 
 .reseñas {
@@ -178,4 +170,10 @@ p {
 .botonCarrito{
     text-align: center;
     border: solid 1px;
+}
+
+@media (max-width: 600px)  { 
+    .formulario {
+        max-width: 250px;
+    }
 }

@@ -1,0 +1,98 @@
+[
+    {
+       "id": 1,
+       "nombre": "Shampoo Sólido - Karité Esencial",
+       "descripcion": "A base de manteca de karité, avena y aceite de coco, que nutren e hidratan profundamente el cabello seco",
+       "imagen": "peloseco.png",
+       "precio": 3000,
+       "stock": 50
+    },
+    {
+       "id": 2,
+       "nombre": "Shampoo Sólido - Equilibrio floral",
+       "descripcion": "A base de arcilla blanca, rosa mosqueta y aceite de argán, que limpian y nutren el cabello normal, manteniendo la hidratación natural",
+       "imagen": "pelonormal.png",
+       "precio": 3000,
+       "stock": 50
+    },
+    {
+       "id": 3,
+       "nombre": "Shampoo Sólido - Vitalidad cítrica",
+       "descripcion": "A base de arcilla verde, romero y aceite de limon, que limpian y controlan el exceso de grasa, sin resecar, dejándolo fresco y ligero",
+       "imagen": "pelograso.png",
+       "precio": 3000,
+       "stock": 50
+    },
+    {
+       "id": 4,
+       "nombre": "Acondicionador Sólido - Armonia",
+       "descripcion": "A base de manteca de cacao, aceite de coco y aceite esencial de lavanda, nutre el cabello, dejándolo suave y manejable",
+       "imagen": "acondicionador.png",
+       "precio": 4500,
+       "stock": 100
+    },
+    {
+       "id": 5,
+       "nombre": "Jabon hidratante Vainilla y Karité",
+       "descripcion": "Con manteca de karité, aceite de oliva extra virgen y extracto de vainilla, limpia e hidrata profundamente la piel",
+       "imagen": "jabonhidratante.png",
+       "precio": 1800,
+       "stock": 25
+    },
+    {
+       "id": 6,
+       "nombre": "Jabon exfoliante Cafe",
+       "descripcion": "Con cafe molido y manteca de cacao, para exfoliar y eliminar impurezas, hidrantando la piel y dejandola mas radiante",
+       "imagen": "jabonexfoliante.png",
+       "precio": 1800,
+       "stock": 25
+    },
+    {
+       "id": 7,
+       "nombre": "Jabon facial Menta",
+       "descripcion": "Con aceite de coco y romero, limpia la piel, con propiedades relajantes y terapéuticas",
+       "imagen": "jabonfacial.png",
+       "precio": 1800,
+       "stock": 25
+    },
+    {
+       "id": 8,
+       "nombre": "Jabon neutro Avena",
+       "descripcion": "Con aceite de ricino y avena, limpia y cuida la piel, sin resecarla",
+       "imagen": "jabonneutro.png",
+       "precio": 1800,
+       "stock": 25
+    },
+    {
+       "id": 9,
+       "nombre": "Jabonera simple Bambu",
+       "descripcion": "Impermeable, tratada con aceites vegetales, con capacidad para una pastilla",
+       "imagen": "jabonerasimple.png",
+       "precio": 1200,
+       "stock": 30
+    },
+    {
+       "id": 10,
+       "nombre": "Jabonera doble Bambu",
+       "descripcion": "Impermeable, tratada con aceites vegetales, con capacidad para dos pastillas",
+       "imagen": "jaboneradoble.png",
+       "precio": 1600,
+       "stock": 40
+    },
+    {
+       "id": 11,
+       "nombre": "Desodorante natural",
+       "descripcion": "En crema, sin agregados químicos, conservantes artificiales ni aromas sintéticos",
+       "imagen": "desodorante.png",
+       "precio": 3500,
+       "stock": 50
+    },
+    {
+       "id": 12,
+       "nombre": "Pasta dental",
+       "descripcion": "Sin aditivos, conservantes artificiales y libres de flúor, en base a ingredientes como caléndula, menta y salvia",
+       "imagen": "pastadental.png",
+       "precio": 3800,
+       "stock": 25
+    }
+]

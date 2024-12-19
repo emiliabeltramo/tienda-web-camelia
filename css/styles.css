@@ -114,36 +114,13 @@ p {
 }
 
 .titulovideo {
-    font-family: 'Alegreya Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
+    font-family: 'Alegreya Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;    
 }
 
 .video {
     display: grid;
     justify-items: center;
-}
-
-.productos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.producto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    margin: 10px;
-    flex: 1 1 200px;
-    box-sizing: border-box;
-    border: solid;
-}
-
-.descripcionproducto {
-    text-align: center;
-    margin-bottom: 0.75em;
-    margin-top: 0.15em;
 }
 
 .formulario {
@@ -167,13 +144,86 @@ p {
     
 }
 
-.botonCarrito{
-    text-align: center;
-    border: solid 1px;
-}
-
 @media (max-width: 600px)  { 
     .formulario {
         max-width: 250px;
+    }
+}
+
+/* Contenedor de productos */
+.listado-productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre las cards */
+    justify-content: center; /* Centra las cards horizontalmente */
+    padding: 20px;
+}
+
+/* Estilo de cada producto (card) */
+article {
+    background: white;
+    border: 1px solid antiquewhite;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Tamaño fijo de las cards */
+    padding: 15px;
+    text-align: center; /* Centrar contenido */
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Imagen del producto */
+article img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Título del producto */
+article h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: black;
+}
+
+/* Descripción */
+article p {
+    margin: 10px 0;
+    color: grey;
+    font-size: 0.9rem;
+}
+
+/* Precio */
+article p:last-of-type {
+    font-weight: bold;
+    color: black;
+    font-size: 1rem;
+}
+
+/* Botón */
+.btn-agregar {
+    background-color:pink;
+    color: grey;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .listado-productos {
+        flex-direction: column; /* Poner las cards en una columna */
+        align-items: center;
+    }
+
+    article {
+        width: 90%; /* Las cards ocupan el 90% del ancho en pantallas pequeñas */
     }
 }

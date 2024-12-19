@@ -150,31 +150,28 @@ p {
     }
 }
 
-/* Contenedor de productos */
 .listado-productos {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Espacio entre las cards */
-    justify-content: center; /* Centra las cards horizontalmente */
+    gap: 20px;
+    justify-content: center;
     padding: 20px;
 }
 
-/* Estilo de cada producto (card) */
 article {
     background: white;
     border: 1px solid antiquewhite;
-    border-radius: 8px; /* Bordes redondeados */
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px; /* Tamaño fijo de las cards */
+    width: 250px; 
     padding: 15px;
-    text-align: center; /* Centrar contenido */
+    text-align: center;
     transition: transform 0.2s, box-shadow 0.2s;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-/* Imagen del producto */
 article img {
     width: 100%;
     height: auto;
@@ -182,28 +179,24 @@ article img {
     margin-bottom: 10px;
 }
 
-/* Título del producto */
 article h3 {
     font-size: 1.2rem;
     margin-bottom: 10px;
     color: black;
 }
 
-/* Descripción */
 article p {
     margin: 10px 0;
     color: grey;
     font-size: 0.9rem;
 }
 
-/* Precio */
 article p:last-of-type {
     font-weight: bold;
     color: black;
     font-size: 1rem;
 }
 
-/* Botón */
 .btn-agregar {
     background-color:pink;
     color: grey;
@@ -216,14 +209,13 @@ article p:last-of-type {
     margin-top: 10px;
 }
 
-/* Responsividad */
 @media (max-width: 768px) {
     .listado-productos {
-        flex-direction: column; /* Poner las cards en una columna */
+        flex-direction: column;
         align-items: center;
     }
 
     article {
-        width: 90%; /* Las cards ocupan el 90% del ancho en pantallas pequeñas */
+        width: 90%;
     }
 }

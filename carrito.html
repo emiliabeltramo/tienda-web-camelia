@@ -20,17 +20,33 @@
             <li> <a href="index.html">INICIO</a> </li>
             <li> <a href="productos.html">PRODUCTOS</a> </li>
             <li> <a href="contacto.html">CONTACTO</a> </li>
-            <li> <a href="carrito.html">CARRITO</a> </li>
+            <li> <a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i></a> </li>
         </ul>
     </nav>
     <main>
-        <div id="carrito-container">
-            <h2>Carrito de Compras</h2>
-        </div>
-        <button id="vaciar-carrito">Vaciar Carrito</button>
+        <h2>Carrito de Compras</h2>
+        <section id="carrito">
+            <div class="items-carrito">
+                <div><p>Item</p></div>
+                <div><p>Nombre</p></div>
+                <div><p>Cantidad</p></div>
+                <div><p>Precio</p></div>
+                <div><p>Subtotal</p></div>
+                <div></div>
+            </div>
+            <div id="lista-carrito">
+            </div>
+            <button id="vaciar-carrito">Vaciar Carrito</button>
+        </section>
     </main>
     <footer>
-        <p>© 2024 - Camelia Cosmetica Natural. Todos los derechos reservados</p>
+        <div class="redes">
+            <p>Seguinos en nuestras redes!</p>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+        </div>
+        <p class="copy">© 2024 - Camelia Cosmetica Natural. Todos los derechos reservados</p>
     </footer>
     <script src="./js/carrito.js"></script>
 </body>

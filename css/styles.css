@@ -1,4 +1,3 @@
-
 header {
     display: flex;
     font-family: 'Playwrite GB S','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -9,7 +8,7 @@ header {
 
 h1 {
     color: gray;
-    font-weight: 400;
+    font-weight: 300;
     text-align: center;
 }
 
@@ -54,10 +53,6 @@ nav {
     margin: 20px;
     padding: 15px;
     padding-top: 0;
-}
-
-.menu {
-    padding-inline-start: 40px;
 }
 
 a {
@@ -116,11 +111,26 @@ p {
 .titulovideo {
     font-family: 'Alegreya Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: larger;    
+    color: gray;
+    margin-left: 15px;
+    padding-top: 5px;
 }
 
 .video {
     display: grid;
     justify-items: center;
+    padding-bottom: 10px;
+}
+
+.redes {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: large;
+}
+
+p.copy {
+    font-size: small;
+    margin-bottom: 0;
 }
 
 .formulario {
@@ -129,25 +139,14 @@ p {
     font-weight: bold;
 }
 
-.reseñas {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    margin: 20px;
-    padding: 15px;
-}
-
-.reseña {
-    padding: 1em;
-    border: dashed 2px;
-    justify-self: center;
-    margin: 1em;
-    
-}
-
-@media (max-width: 600px)  { 
-    .formulario {
-        max-width: 250px;
-    }
+.enviarForm { 
+    background-color: grey;
+    color: pink;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
 .listado-productos {
@@ -159,14 +158,12 @@ p {
 }
 
 article {
-    background: white;
     border: 1px solid antiquewhite;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 250px; 
     padding: 15px;
     text-align: center;
-    transition: transform 0.2s, box-shadow 0.2s;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -207,11 +204,112 @@ article p:last-of-type {
     border-radius: 5px;
     cursor: pointer;
     font-size: 1rem;
-    transition: background-color 0.3s;
     margin-top: 10px;
 }
 
+.reseñas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin: 20px;
+    padding: 15px;
+}
+
+.reseña {
+    padding: 1em;
+    border: dashed 2px;
+    justify-self: center;
+    margin: 1em;
+    
+}
+
+#carrito {
+    width: 90%;
+    margin: 20px auto;
+    border: 1px solid antiquewhite;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+}
+
+.items-carrito {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+    font-size: large;
+    color: black;
+    padding: 10px 0;
+    border-radius: 5px 5px 0 0;
+}
+
+#lista-carrito {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+    align-items: stretch;
+    gap: 10px;
+}
+
+.producto-carrito {
+    display: contents;
+}
+
+#lista-carrito > div {
+    border-bottom: 1px solid antiquewhite;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.btn-incrementar,
+.btn-decrementar {
+    background-color: pink;
+    color: grey;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 0 5px;
+}
+
+.btn-eliminar {
+    background-color: grey;
+    color: antiquewhite;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+#vaciar-carrito {
+    background-color: pink;
+    color: grey;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 20px auto 0 auto;
+    cursor: pointer;
+}
+
 @media (max-width: 768px) {
+    ul, ol {
+        list-style: none;
+        display: grid;
+        justify-content: end;
+    }
+
+    .contenedorbanner {
+        display: grid;
+    }
+
+    .video iframe {
+        max-width: 300px;
+}
+
+    .formulario {
+        max-width: 250px;
+    }
+
     .listado-productos {
         flex-direction: column;
         align-items: center;
@@ -219,5 +317,13 @@ article p:last-of-type {
 
     article {
         width: 90%;
+    }
+
+    .items-carrito {
+        display: flex;
+    }
+
+    #lista-carrito {
+        display: flex;
     }
 }

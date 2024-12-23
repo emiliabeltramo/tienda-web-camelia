@@ -1,4 +1,4 @@
-//Cargar los productos en la pagina productos desde un json
+//Carga de la pagina productos desde un json y evento de agregar al carrito
 let productos = [];
 
 const cargarProductos = async () => {

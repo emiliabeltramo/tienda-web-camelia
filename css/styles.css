@@ -216,7 +216,8 @@ article p:last-of-type {
 
 .reseña {
     padding: 1em;
-    border: dashed 2px;
+    border: dashed 2px antiquewhite;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     justify-self: center;
     margin: 1em;
     
@@ -280,7 +281,18 @@ article p:last-of-type {
     font-size: 13px;
 }
 
-#vaciar-carrito {
+#total-contenedor {
+    margin-top: 20px;
+    text-align: right;
+    font-weight: bold;
+}
+
+h3#total-carrito {
+    text-align: right;
+    margin-right: 30px;
+}
+
+#finalizar-compra {
     background-color: pink;
     color: grey;
     border: none;
@@ -288,6 +300,17 @@ article p:last-of-type {
     padding: 10px 20px;
     font-size: 16px;
     margin: 20px auto 0 auto;
+    cursor: pointer;
+}
+
+#vaciar-carrito {
+    background-color: pink;
+    color: grey;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-right: 30px;
     cursor: pointer;
 }
 
@@ -321,9 +344,13 @@ article p:last-of-type {
 
     .items-carrito {
         display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     #lista-carrito {
         display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 }

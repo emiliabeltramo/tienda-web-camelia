@@ -1,11 +1,16 @@
-
-// Renderizar el carrito
+//Carga de carrito desde localStorage, actualizacion por cada accion que se produzca (modificar cantidades, eliminar productos, calcular total y vaciar carrito)
 function actualizarCarrito() {
     const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
     const listaCarrito = document.getElementById("lista-carrito");
+    const totalCarrito = document.getElementById("total-carrito");
     listaCarrito.innerHTML = '';
 
+    let total = 0;
+
     carrito.forEach((item) => {
+        const subtotal = item.cantidad * item.precio;
+        total += subtotal;
+
         const html = `
             <div><p>${item.id}</p></div>
             <div><p>${item.nombre}</p></div>
@@ -15,23 +20,23 @@ function actualizarCarrito() {
                 <button class="btn-incrementar" data-id="${item.id}">+</button>
             </div>
             <div><p>$${item.precio}</p></div>
-            <div><p>$${item.cantidad * item.precio}</p></div>
+            <div><p>$${subtotal}</p></div>
             <div><button class="btn-eliminar" data-id="${item.id}">Eliminar producto</button></div>
         `;
         listaCarrito.innerHTML += html;
     });
 
-    // Asignar eventos a botones de incrementar, decrementar y eliminar
+    totalCarrito.textContent = `Total: $${total.toFixed(2)}`;
+
     agregarEventosContadores();
 }
 
-// Asignar eventos a los botones de incrementar/decrementar y eliminar
 function agregarEventosContadores() {
     const botonesIncrementar = document.querySelectorAll('.btn-incrementar');
     const botonesDecrementar = document.querySelectorAll('.btn-decrementar');
     const botonesEliminar = document.querySelectorAll('.btn-eliminar');
 
-    // Evento para incrementar
+
     botonesIncrementar.forEach((boton) => {
         boton.addEventListener('click', (e) => {
             const id = e.target.dataset.id;
@@ -39,7 +44,6 @@ function agregarEventosContadores() {
         });
     });
 
-    // Evento para decrementar
     botonesDecrementar.forEach((boton) => {
         boton.addEventListener('click', (e) => {
             const id = e.target.dataset.id;
@@ -47,7 +51,6 @@ function agregarEventosContadores() {
         });
     });
 
-    // Evento para eliminar
     botonesEliminar.forEach((boton) => {
         boton.addEventListener('click', (e) => {
             const id = e.target.dataset.id;
@@ -56,7 +59,6 @@ function agregarEventosContadores() {
     });
 }
 
-// Modificar cantidad del producto
 function modificarCantidadProducto(idProducto, cambio) {
     const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
     console.log(carrito);
@@ -65,7 +67,6 @@ function modificarCantidadProducto(idProducto, cambio) {
     if (producto) {
         producto.cantidad += cambio;
 
-        // Evitar que la cantidad sea menor que 1
         if (producto.cantidad < 1) {
             producto.cantidad = 1;
         }
@@ -76,7 +77,6 @@ function modificarCantidadProducto(idProducto, cambio) {
     console.log(carrito);
 }
 
-// Función para eliminar un producto del carrito
 function eliminarProducto(idProducto) {
     const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
     const nuevoCarrito = carrito.filter((producto) => producto.id !== idProducto);
@@ -85,13 +85,15 @@ function eliminarProducto(idProducto) {
     actualizarCarrito();
 }
 
-// Vaciar completamente el carrito
 document.getElementById("vaciar-carrito").addEventListener("click", () => {
     localStorage.removeItem("carrito");
     actualizarCarrito();
 });
 
-// Inicializar el carrito al cargar la página
+document.getElementById("finalizar-compra").addEventListener("click", () => {
+    alert("Muchas gracias por su compra!")
+});
+
 document.addEventListener("DOMContentLoaded", () => {
     actualizarCarrito();
 });

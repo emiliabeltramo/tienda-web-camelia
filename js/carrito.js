@@ -91,7 +91,7 @@ document.getElementById("vaciar-carrito").addEventListener("click", () => {
 });
 
 document.getElementById("finalizar-compra").addEventListener("click", () => {
-    alert("Muchas gracias por su compra);
+    alert("Muchas gracias por su compra!");
     localStorage.removeItem("carrito");
     actualizarCarrito();
 });

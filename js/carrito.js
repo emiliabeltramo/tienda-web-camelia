@@ -95,7 +95,6 @@ document.getElementById("finalizar-compra").addEventListener("click", () => {
     localStorage.removeItem("carrito");
     actualizarCarrito();
 });
-});
 
 document.addEventListener("DOMContentLoaded", () => {
     actualizarCarrito();

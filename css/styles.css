@@ -327,7 +327,7 @@ h3#total-carrito {
 
     .video iframe {
         max-width: 300px;
-}
+    }
 
     .formulario {
         max-width: 250px;
@@ -342,15 +342,18 @@ h3#total-carrito {
         width: 90%;
     }
 
-    .items-carrito {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+    .btn-eliminar {
+        padding: 2px 5px;
+        font-size: 11px;
     }
 
-    #lista-carrito {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+    .btn-incrementar, .btn-decrementar {
+        padding: 3px 7px;
+    }
+}
+
+@media (max-width: 576px) {
+    .btn-incrementar, .btn-decrementar {
+        padding: 4px 4px;
     }
 }

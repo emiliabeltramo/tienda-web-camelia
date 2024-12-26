@@ -240,6 +240,7 @@ article p:last-of-type {
     color: black;
     padding: 10px 0;
     border-radius: 5px 5px 0 0;
+    gap: 10px;
 }
 
 #lista-carrito {
@@ -319,6 +320,7 @@ h3#total-carrito {
         list-style: none;
         display: grid;
         justify-content: end;
+        gap: 10px;
     }
 
     .contenedorbanner {
@@ -352,8 +354,23 @@ h3#total-carrito {
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 425px) {
+    #carrito #lista-carrito {
+        grid-template-columns: 1fr 4fr 3fr 2fr 2fr 0fr !important;
+    }
+
     .btn-incrementar, .btn-decrementar {
-        padding: 4px 4px;
+        padding: 4px 9px;
+        }
+
+    h3#total-carrito {
+        text-align: right;
+        margin-right: 10px;
+        font-size: medium;
+    }
+
+    #vaciar-carrito {
+        font-size: 14px;
+        margin-right: 10px;
     }
 }

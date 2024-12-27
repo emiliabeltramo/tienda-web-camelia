@@ -348,10 +348,6 @@ h3#total-carrito {
         padding: 2px 5px;
         font-size: 11px;
     }
-
-    .btn-incrementar, .btn-decrementar {
-        padding: 3px 7px;
-    }
 }
 
 @media (max-width: 425px) {

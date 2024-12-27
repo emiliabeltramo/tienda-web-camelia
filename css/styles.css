@@ -356,11 +356,14 @@ h3#total-carrito {
 
 @media (max-width: 425px) {
     #carrito #lista-carrito {
-        grid-template-columns: 1fr 4fr 3fr 2fr 2fr 0fr !important;
+        grid-template-columns: 1fr 4fr 2fr 2fr 2fr 0fr !important;
+        font-size: 15px;
+        gap: 5px;
     }
 
     .btn-incrementar, .btn-decrementar {
-        padding: 4px 9px;
+        padding: 3px 4px;
+        margin: 0px;
         }
 
     h3#total-carrito {
@@ -372,5 +375,6 @@ h3#total-carrito {
     #vaciar-carrito {
         font-size: 14px;
         margin-right: 10px;
+        padding: 10px 15px;
     }
 }
